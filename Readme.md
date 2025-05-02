@@ -25,7 +25,7 @@ Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/Spider.git", from: "1.0.0")
+    .package(url: "https://github.com/siva-sankar-dev/Spider", from: "1.0.0")
 ]
 ```
 

@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SpiderNet {
+public struct Spider {
     // The service property provides the actual networking functionality
     public let service: NetworkProtocol
     

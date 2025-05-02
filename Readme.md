@@ -2,8 +2,6 @@
 
 A lightweight, protocol-oriented network layer for Swift applications. Spider provides a flexible and testable networking foundation for both UIKit and SwiftUI applications, with support for both GCD completion handlers and modern Swift Concurrency.
 
-![Spider Network Layer](https://via.placeholder.com/800x400?text=Spider+Network+Layer)
-
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 [![Platform](https://img.shields.io/badge/platforms-iOS%20|%20macOS%20|%20watchOS%20|%20tvOS-lightgrey.svg)](https://developer.apple.com/swift/)
 [![Swift](https://img.shields.io/badge/Swift-5.5+-orange.svg)](https://swift.org/)

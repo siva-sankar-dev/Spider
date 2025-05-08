@@ -14,9 +14,9 @@ import Foundation
 /// try spider.performRequest(HTTPRequest(urlString: "https://api.example.com/users")) { result in
 ///     switch result {
 ///     case .success(let data):
-///         // Handle the data
+///         // Handle the data.
 ///     case .failure(let error):
-///         // Handle the error
+///         // Handle the error.
 ///     }
 /// }
 /// ```

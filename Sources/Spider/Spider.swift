@@ -71,7 +71,7 @@ public struct Spider {
     /// ```
     public func performRequest(
         _ request: HTTPRequest,
-        completion: @escaping (Result<Data, NetworkError>) -> Void
+        completion: @Sendable @escaping (Result<Data, NetworkError>) -> Void
     ) {
         service.performRequest(request, completion: completion)
     }
@@ -132,7 +132,7 @@ public struct Spider {
         _ request: HTTPRequest,
         responseType: T.Type,
         decoder: JSONDecoder = JSONDecoder(),
-        completion: @escaping (Result<T, NetworkError>) -> Void
+        completion: @Sendable @escaping (Result<T, NetworkError>) -> Void
     ) {
         service.performRequest(request, responseType: responseType, decoder: decoder, completion: completion)
     }

@@ -13,14 +13,14 @@ public protocol NetworkProtocol {
     // GCD style APIs
     func performRequest(
         _ request: HTTPRequest,
-        completion: @escaping (Result<Data, NetworkError>) -> Void
+        completion: @Sendable @escaping (Result<Data, NetworkError>) -> Void
     )
     
     func performRequest<T: Decodable>(
         _ request: HTTPRequest,
         responseType: T.Type,
         decoder: JSONDecoder,
-        completion: @escaping (Result<T, NetworkError>) -> Void
+        completion: @Sendable @escaping (Result<T, NetworkError>) -> Void
     )
     
     // Async/await style APIs

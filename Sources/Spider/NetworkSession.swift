@@ -10,7 +10,7 @@ import Foundation
 public protocol NetworkSession {
     func execute(
         _ request: URLRequest,
-        completion: @escaping (Data?, URLResponse?, Error?) -> Void
+        completion: @Sendable @escaping (Data?, URLResponse?, Error?) -> Void
     )
     
     func execute(_ request: URLRequest) async throws -> (Data, URLResponse)
@@ -19,7 +19,7 @@ public protocol NetworkSession {
 extension URLSession: NetworkSession {
     public func execute(
         _ request: URLRequest,
-        completion: @escaping (Data?, URLResponse?, Error?) -> Void
+        completion: @Sendable @escaping (Data?, URLResponse?, Error?) -> Void
     ) {
         let task = dataTask(with: request, completionHandler: completion)
         task.resume()

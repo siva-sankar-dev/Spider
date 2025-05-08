@@ -17,7 +17,7 @@ public class NetworkService: NetworkProtocol {
        
        public func performRequest(
            _ request: HTTPRequest,
-           completion: @escaping (Result<Data, NetworkError>) -> Void
+           completion: @Sendable @escaping (Result<Data, NetworkError>) -> Void
        ) {
            let urlRequest = request.asURLRequest()
            
@@ -53,7 +53,7 @@ public class NetworkService: NetworkProtocol {
            _ request: HTTPRequest,
            responseType: T.Type,
            decoder: JSONDecoder = JSONDecoder(),
-           completion: @escaping (Result<T, NetworkError>) -> Void
+           completion:@Sendable @escaping (Result<T, NetworkError>) -> Void
        ) {
            performRequest(request) { result in
                switch result {

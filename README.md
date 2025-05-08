@@ -31,7 +31,7 @@ dependencies: [
 
 Or add it directly through Xcode:
 1. File > Swift Packages > Add Package Dependency
-2. Enter the repository URL: `https://github.com/yourusername/Spider.git`
+2. Enter the repository URL: `https://github.com/siva-sankar-dev/Spider`
 3. Specify the version requirements
 
 ## Quick Start Guide
